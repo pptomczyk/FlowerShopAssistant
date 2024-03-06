@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="64dp"
+    android:layout_marginVertical="10dp">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:hint="Cena"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/color"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:hint="Kolor"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flower"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:hint="Kwiat"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:paddingStart="7dp"
+        android:paddingEnd="7dp"
+        android:hint="Opis"
+        android:layout_marginBottom="15dp"
+        android:inputType="textMultiLine"
+        android:minLines="3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Anuluj"
+            android:layout_marginRight="32dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@android:color/holo_red_dark"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Zapisz"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@android:color/holo_green_dark"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
